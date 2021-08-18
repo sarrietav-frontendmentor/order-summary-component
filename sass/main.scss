@@ -79,13 +79,13 @@ body {
 
 .callout {
   background-color: $Very-pale-blue;
-  display: flex;
   width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
 
+  display: flex;
   align-items: center;
   justify-items: end;
-
-  padding: 1rem;
 
   &__left {
     display: flex;
@@ -104,7 +104,7 @@ body {
   &__title {
     color: $Dark-blue;
     font-size: 1rem;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
   }
 
   &__price {
