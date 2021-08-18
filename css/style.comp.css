@@ -80,7 +80,8 @@ body {
   font-family: inherit;
   font-weight: 700;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  transition: all 0.2s; }
   .btn--primary {
     color: #f5f7ff;
     background-color: #3829e0;
@@ -88,9 +89,17 @@ body {
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 1rem 2rem rgba(56, 41, 224, 0.2); }
+    .btn--primary:hover {
+      background-color: #6255e7;
+      box-shadow: 0 1rem 2rem rgba(98, 85, 231, 0.2); }
   .btn--secondary {
     color: #7280a7;
     margin-top: 1rem; }
+    .btn--secondary:hover {
+      color: #31394e; }
   .btn--callout {
     color: #3829e0;
     text-decoration: underline; }
+    .btn--callout:hover {
+      text-decoration: none;
+      color: #766cea; }
