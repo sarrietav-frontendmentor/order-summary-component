@@ -119,7 +119,7 @@ body {
 
 .btn {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
 
   border: none;
   background-color: transparent;
@@ -129,7 +129,16 @@ body {
     background-color: $Bright-blue;
     width: 100%;
     padding: 0.75rem 1rem;
-    font-weight: 700;
+
     border-radius: 0.5rem;
+  }
+
+  &--secondary {
+    color: $Desaturated-blue;
+  }
+
+  &--callout {
+    color: $Bright-blue;
+    text-decoration: underline;
   }
 }
