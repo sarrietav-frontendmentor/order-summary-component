@@ -67,4 +67,9 @@ body {
     color: $Dark-blue;
     margin: 1rem;
   }
+
+  &__description {
+    font-weight: 400;
+    color: $Desaturated-blue;
+  }
 }
