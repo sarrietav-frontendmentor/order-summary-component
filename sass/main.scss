@@ -55,11 +55,16 @@ body {
 
   &__details {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &__title {
+    color: $Dark-blue;
+    margin: 1rem;
   }
 }
