@@ -59,17 +59,60 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
+    & > * {
+      margin: 0.5rem;
+    }
   }
 
   &__title {
     color: $Dark-blue;
-    margin: 1rem;
   }
 
   &__description {
     font-weight: 400;
     color: $Desaturated-blue;
+  }
+}
+
+.callout {
+  background-color: $Very-pale-blue;
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-items: end;
+
+  padding: 1rem;
+
+  &__left {
+    display: flex;
+  }
+
+  &__icon {
+    height: 100%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__title {
+    color: $Dark-blue;
+    font-size: 1rem;
+    margin-bottom: .25rem;
+  }
+
+  &__price {
+    font-size: 1rem;
+    color: $Desaturated-blue;
+  }
+
+  button {
+    margin-left: auto;
   }
 }
