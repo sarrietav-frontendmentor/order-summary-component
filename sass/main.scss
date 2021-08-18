@@ -21,7 +21,126 @@ body {
   font-family: 'Red Hat Display', sans-serif;
 
   background-image: url(../assets/pattern-background-desktop.svg);
+
   background-repeat: no-repeat;
   background-size: contain;
-  height: 90vh;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-color-overlay {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  background-color: $Desaturated-blue;
+  opacity: 0.25;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 30%;
+  z-index: 2;
+
+  &__image {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+  }
+
+  &__details {
+    text-align: center;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    & > * {
+      margin: 0.5rem;
+    }
+  }
+
+  &__title {
+    color: $Dark-blue;
+  }
+
+  &__description {
+    font-weight: 400;
+    color: $Desaturated-blue;
+  }
+}
+
+.callout {
+  background-color: $Very-pale-blue;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-items: end;
+
+  &__left {
+    display: flex;
+  }
+
+  &__icon {
+    height: 100%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  &__title {
+    color: $Dark-blue;
+    margin-bottom: 0.25rem;
+    font-weight: 900;
+    font-size: inherit;
+  }
+
+  &__price {
+    color: $Desaturated-blue;
+  }
+
+  button {
+    margin-left: auto;
+  }
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+
+  border: none;
+  background-color: transparent;
+
+  &--primary {
+    color: $Very-pale-blue;
+    background-color: $Bright-blue;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba($color: $Bright-blue, $alpha: 0.2);
+  }
+
+  &--secondary {
+    color: $Desaturated-blue;
+    margin-top: 1rem;
+  }
+
+  &--callout {
+    color: $Bright-blue;
+    text-decoration: underline;
+  }
 }
