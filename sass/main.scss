@@ -5,6 +5,12 @@ $Very-pale-blue: hsl(225, 100%, 98%);
 $Desaturated-blue: hsl(224, 23%, 55%);
 $Dark-blue: hsl(223, 47%, 23%);
 
+@mixin phone-styles {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
 *,
 *::before,
 *::after {
