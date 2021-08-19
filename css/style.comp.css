@@ -17,6 +17,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 414px) {
+    body {
+      padding: 2rem; } }
 
 .bg-color-overlay {
   width: 100%;
@@ -30,6 +33,9 @@ body {
   border-radius: 1rem;
   width: 30%;
   z-index: 2; }
+  @media only screen and (max-width: 414px) {
+    .card {
+      width: initial; } }
   .card__image {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -45,6 +51,9 @@ body {
       margin: 0.5rem; }
   .card__title {
     color: #1f2f56; }
+    @media only screen and (max-width: 414px) {
+      .card__title {
+        font-size: 1.5rem; } }
   .card__description {
     font-weight: 400;
     color: #7280a7; }
