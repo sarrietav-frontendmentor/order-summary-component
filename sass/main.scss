@@ -35,6 +35,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include phone-styles {
+    padding: 2rem;
+  }
 }
 
 .bg-color-overlay {
@@ -52,6 +56,10 @@ body {
   border-radius: 1rem;
   width: 30%;
   z-index: 2;
+
+  @include phone-styles {
+    width: initial;
+  }
 
   &__image {
     border-top-left-radius: 1rem;
@@ -75,6 +83,10 @@ body {
 
   &__title {
     color: $Dark-blue;
+
+    @include phone-styles {
+      font-size: 1.5rem;
+    }
   }
 
   &__description {
