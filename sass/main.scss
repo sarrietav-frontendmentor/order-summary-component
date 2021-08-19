@@ -56,6 +56,7 @@ body {
   border-radius: 1rem;
   width: 30%;
   z-index: 2;
+  box-shadow: 0 2rem 2rem rgba($color: $Desaturated-blue, $alpha: .25);
 
   @include phone-styles {
     width: initial;
