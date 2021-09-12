@@ -1,5 +1,5 @@
 /style-helpers
 /node_modules
 css/style.css.map
-css/style.css
+css/style.prefix.css
 css/style.comp.css
